@@ -79,7 +79,7 @@ form.addEventListener("submit", async function(e){
         else{
 
             status.innerHTML =
-            "<p style='color:red'>Unable to save your enquiry.</p>";
+            "<p style='color:red'>Error: " + result.error + "</p>";
 
         }
 
