@@ -1,34 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Contact - Grip Luxury Pens</title>
+
 <link rel="stylesheet" href="css/style.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
 <!-- Background Video -->
 <video autoplay muted loop id="about-bg-video">
-  <source src="video/video5s.mp4" type="video/mp4">
+    <source src="video/video5s.mp4" type="video/mp4">
 </video>
 
 <!-- Back Button -->
-<a href="index.html" class="back-btn about-fixed-btn">← Back to Collection</a>
+<a href="index.html" class="back-btn about-fixed-btn">
+    ← Back to Collection
+</a>
 
 <!-- Right Panel -->
 <div class="about-panel">
-  <div class="about-text">
 
-    <h2 style="margin-bottom:20px;">Contact Us</h2>
+    <div class="about-text">
 
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="6" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+        <h2 style="margin-bottom:20px;">
+            Contact Us
+        </h2>
 
-  </div>
+        <p style="margin-bottom:25px;">
+            We would be delighted to answer your questions regarding our luxury writing instruments,
+            bespoke designs or corporate editions.
+        </p>
+
+        <form id="contact-form" class="contact-form">
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required>
+
+            <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder="Company (optional)">
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required>
+
+            <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+                required>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="8"
+                placeholder="Your Message"
+                required></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+        <div id="status"></div>
+
+    </div>
+
 </div>
+
+<script src="js/contact.js"></script>
 
 </body>
 </html>
